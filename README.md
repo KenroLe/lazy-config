@@ -6,9 +6,9 @@ For Windows you may need to install a C compiler (I use Mingw).
 
 Linux
 ```bash
-git clone https://github.com/LazyVim/starter ~/.config/nvim
+git clone git@github.com:KenroLe/lazy-config.git ~/.config/nvim
 ```
 Windows
 ```bash
-git clone https://github.com/LazyVim/starter $env:LOCALAPPDATA\nvim
+git clone git@github.com:KenroLe/lazy-config.git $env:LOCALAPPDATA\nvim
 ```
