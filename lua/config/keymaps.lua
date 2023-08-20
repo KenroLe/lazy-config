@@ -4,3 +4,12 @@
 vim.keymap.set('n', '<leader>cF', function()
   vim.lsp.buf.format();
 end, { remap = true })
+-- close all other buffers
+vim.keymap.set('n', '<leader>bco', function()
+  local current = vim.api.nvim_get_current_buf()
+  for _, bufnr in ipairs(vim.api.nvim_list_bufs()) do
+    if current ~= bufnr then
+      vim.api.nvim_buf_delete(bufnr, {})
+    end
+  end
+end)
